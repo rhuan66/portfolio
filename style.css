@@ -1,11 +1,12 @@
 *{
     box-sizing: border-box;
     margin: 0;
-   
+    scroll-behavior: smooth
 }
 
 body{
-    background-color: #000;
+    background: #000000;
+    background: radial-gradient(circle,rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0.66) 45%);
 }
 
 header {
@@ -48,18 +49,23 @@ header a {
     width: 70%;
     margin: auto;
     display: flex;
+    align-items: center;
 }
 .contact_left {
     position: absolute;
-    left: 9px;
+    left: 30px;
     display: flex;
     flex-direction: column;
-    
 }
 
+svg {
+    width: 40px;
+    fill: #9818FB;
+}
 
 .sobre {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
 }
@@ -80,4 +86,10 @@ header a {
     font-size: 18px;
     color: #989BA0;
     padding-bottom: 30px;
+}
+.sobre_img img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 4px solid #9818FB;
 }
