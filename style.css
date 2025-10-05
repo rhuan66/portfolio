@@ -93,3 +93,35 @@ svg {
     border-radius: 50%;
     border: 4px solid #9818FB;
 }
+
+
+.section_formacao {
+    width: 100%;
+    height: 60vh;
+}
+.container_formacao{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+.section_formacao h1 {
+    color: #f3f4f6;
+}
+.formacaoInfos {
+    background-color: #000000;
+    margin-top: 30px;
+    width: 60%;
+    padding: 20px;
+    color: #9AA1AE;
+    border-radius: 20px;
+    border: 1px solid #1E2939;
+}
+.formacaoInfos h3 {
+    color: #9818FB;
+    padding-bottom: 20px;
+    
+}
