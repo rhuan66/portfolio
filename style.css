@@ -246,13 +246,6 @@ button{
         height: auto;
         padding: 50px 0; /* Adiciona padding vertical para espaçamento */
     }
-
-    /* === MENU LATERAL (SIDEBAR) === */
-
-    /* Esconde o menu de navegação padrão (desktop) */
-    header .sidebar {
-        display: none;
-    }
     .menu-icon {
         display: block; 
     }
@@ -311,7 +304,6 @@ button{
         border-bottom: 1px solid var(--border-color);
     }
 
-
     /* Seção Sobre */
     .sobre {
         flex-direction: column; /* Coloca a imagem e o texto em colunas */
@@ -357,7 +349,6 @@ button{
 @media (max-width: 600px) {
     /* Cabeçalho */
     .header {
-        /* Mantemos o flex-direction: row e usamos o sidebar */
         height: 80px;
     }
     
@@ -399,3 +390,4 @@ button{
         width: 100%;
     }
 }
+
