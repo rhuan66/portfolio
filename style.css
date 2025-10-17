@@ -215,7 +215,7 @@ body.light-theme .theme-toggle .icon-sun {
     width: 100%;
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .project {
