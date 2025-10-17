@@ -10,11 +10,13 @@
 
 <body>
     <header>
+        <!--Container é separado do header para poder ser ultilizado em outras partes do codigo-->
         <div class="container header">
             <div class="logo">
                 <h1>Rhuan Santos</h1>
             </div>
 
+            <!--botao para mudar a cor do tema entre claro e escuro, foi utilizado chat gpt para auxiliar a fazer-->
             <button id="theme-toggle" class="theme-toggle" aria-label="Trocar tema">
                 <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -34,12 +36,14 @@
                 </svg>
             </button>
 
+            <!--Barra de menu, aparece apenas em celulares-->
             <div class="menu-icon">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </div>
 
+            <!--siderbar com links de direcionam para cada ponto do site-->
             <nav class="sidebar">
                 <a href="#sobre">Sobre</a>
                 <a href="#formacao">Formação</a>
@@ -48,23 +52,32 @@
             </nav>
 
         </div>
+        <!--borda do header-->
         <div class="border_bottom"></div>
     </header>
 
+    <!--seção SOBRE onde é apresentado sobre mim-->
     <section id="sobre" class="section_sobre">
         <div class="container sobre">
             <div class="sobre_text">
                 <h1>Rhuan Santos</h1>
                 <h3>Engenheiro de Software</h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur,
-                    adipisicing elit. Iusto explicabo odio officia
-                    voluptate ratione debitis qui neque! Odit necessitatibus
-                    obcaecati sequi, eaque expedita error iste quia illum repellat impedit,
-                    quae consectetur. Deserunt mollitia autem dolores ducimus, veritatis magni provident?
+                <p>
+                <p>
+                    Sou Engenheiro de Software em formação com foco em desenvolvimento <b>Full-Stack</b>, buscando
+                    construir soluções completas: desde a experiência de usuário (Front-end) até a lógica de sistemas
+                    (Back-end) e a automação de processos. Minha principal motivação é resolver problemas de forma
+                    eficiente, utilizando <b>Python</b> para lógica de sistemas e <b>JavaScript/HTML/CSS</b> para
+                    desenvolvimento web. Busco ativamente uma oportunidade de <b>estágio</b> para aplicar meus
+                    conhecimentos e iniciar minha trajetória profissional na área de tecnologia.
                 </p>
+                </p>
+                </p>
+                <!--Links clicaveis que direcionam para as midias sociais-->
                 <div class="social-links">
                     <a href="https://github.com/rhuan66" class="icons-social">
+                        <!--SVG ultilizado nos icons, para poder mudar cores de uma forma mais facil-->
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github"
                             viewBox="0 0 16 16">
                             <path
@@ -88,11 +101,14 @@
                     </a>
                 </div>
             </div>
+            <!--Foto-->
             <div class="sobre_img">
                 <img src="image/foto.png" alt="" width="100px">
             </div>
         </div>
     </section>
+
+    <!--seção onde fica as formacões e cursos já feitos-->
     <section id="formacao" class="section_formacao">
         <div class="container formacao">
             <h1>Formação</h1>
@@ -119,25 +135,30 @@
             </div>
         </div>
     </section>
+
+    <!--seção de projetos já feitos -->
     <section id="projetos" class="section_projetos">
         <div class="container projetos">
             <h1>Portfólio</h1>
             <div class="allProjects">
 
-                <div class="project" data-title="Automação com o pyautogui" 
 
-                        data-description="Esse código em Python automatiza o processo de cadastro de produtos em um site.
+                <!--
+                O atributo DATA é usado para armazenar dados privados
+                Esses dados podem ser acessados pelo JS
+                -->
+                <div class="project" data-title="Automação com o pyautogui"
+                    data-description="Esse código em Python automatiza o processo de cadastro de produtos em um site.
                         Usando as bibliotecas PyAutoGUI, time e pandas, ele:
                         Abre o navegador Chrome automaticamente.
                         Acessa o site de login e faz autenticação com e-mail e senha.
                         Lê uma planilha CSV contendo informações dos produtos (como código, marca, tipo, preço etc.).
                         Preenche e envia o formulário de cadastro de cada produto no site, simulando cliques e digitação humana."
-
-                        data-video-url="https://www.youtube.com/embed/NuYN_lmrkf0?si=xw9HNJCLIq1_ODgo">
+                    data-video-url="https://www.youtube.com/embed/NuYN_lmrkf0?si=xw9HNJCLIq1_ODgo">
                     <img src="image/capaProject1.png" alt="">
                     <div class="projectInfos">
                         <div class="tecnologias">
-                            <img src="" alt="">
+                            <img src="image/icons8-python-48.png" alt="icone do python">
                         </div>
                         <h3>Projeto 1</h3>
                         <p>
@@ -148,18 +169,20 @@
                 </div>
 
                 <div class="project" data-title="Site para divulgar comércios locais"
-                
                     data-description="Este projeto foi desenvolvido como parte de uma atividade extensionista e tem como objetivo divulgar os comércios locais da cidade de Araponga, MG. O site foi criado utilizando HTML e CSS, com o apoio de um pouco de JavaScript para adicionar interatividade."
-
                     data-video-url="https://www.youtube.com/embed/u7oCQSDITZM?si=YooMsEt47Mn-Bi5y">
                     <img src="image/capaProject2.png" alt="">
                     <div class="projectInfos">
                         <div class="tecnologias">
-                            <img src="" alt="">
+                            <img src="image/icons8-html-5-48.png" alt="icone HTML5">
+                            <img src="image/icons8-css-logo-48.png" alt="icone CSS3">
+                            <img src="image/icons8-javascript-48.png" alt="icone JavaScript">
                         </div>
                         <h3>Projeto 2</h3>
                         <p>
-                           Este projeto foi desenvolvido como parte de uma atividade extensionista e tem como objetivo divulgar os comércios locais da cidade de Araponga, MG. O site foi criado utilizando HTML e CSS, com o apoio de um pouco de JavaScript para adicionar interatividade.
+                            Este projeto foi desenvolvido como parte de uma atividade extensionista e tem como objetivo
+                            divulgar os comércios locais da cidade de Araponga, MG. O site foi criado utilizando HTML e
+                            CSS, com o apoio de um pouco de JavaScript para adicionar interatividade.
                         </p>
                     </div>
                 </div>
@@ -169,9 +192,11 @@
         </div>
     </section>
 
+    <!--seção de contato-->
     <section id="contato" class="section_container">
         <div class="container contato">
             <h1>Contato</h1>
+            <!--formulario-->
             <form id="contact-form" novalidate>
                 <label for="nome">Nome</label>
                 <input id="nome" name="nome" type="text" required />
@@ -190,6 +215,7 @@
         </div>
     </section>
 
+    <!--Modal que aparece quando clica em algum projeto-->
     <div id="project-modal" class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
@@ -205,6 +231,7 @@
         </div>
     </div>
 
+    <!--Js colocado em ultimo no codigo, para carregar apenas quando o site carregar por completo-->
     <script src="script.js"></script>
 </body>
 

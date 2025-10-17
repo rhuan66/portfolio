@@ -232,6 +232,9 @@ body.light-theme .theme-toggle .icon-sun {
 .projectInfos {
     padding: 10px;
 }
+.tecnologias img {
+    width: 28px;
+}
 .projectInfos .tecnologias, .projectInfos h3 {
     color: var(--text-light);
     padding-bottom: 10px;
